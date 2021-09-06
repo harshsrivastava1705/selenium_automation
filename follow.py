@@ -2,7 +2,7 @@ import instaloader
 L = instaloader.Instaloader()
 
 # Login or load session
-L.login("zeus2.0._", "Pnah8726")        # (login)
+L.login("userID", "Password")        # (login)
 # Obtain profile metadata
 profile = instaloader.Profile.from_username(L.context, "zeus2.0._")
 
