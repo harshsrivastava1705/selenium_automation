@@ -14,9 +14,9 @@ webpage='https://instagram.com'
 driver.get(webpage)
 
 user=wait.until(EC.presence_of_element_located((By.XPATH,"//*[@id=\"loginForm\"]/div/div[1]/div/label/input")))
-user.send_keys("zeus2.0._")
+user.send_keys("userid")
 password=driver.find_element_by_xpath("//*[@id=\"loginForm\"]/div/div[2]/div/label/input")
-password.send_keys("Pnah8726")
+password.send_keys("password")
 driver.find_element_by_xpath("//*[@id=\"loginForm\"]/div/div[3]/button").click()
 otp=wait.until(EC.presence_of_element_located((By.XPATH,"//*[@id=\"react-root\"]/section/main/div/div/div[1]/div/form/div[1]/div/label/input")))
 s=input("Enter OTP")
