@@ -9,7 +9,7 @@ add='https://web.whatsapp.com/'
 driver.get(add)
 wait=WebDriverWait(driver, 60)
 sleep(6)
-user=wait.until(EC.presence_of_element_located((By.XPATH,"//span[@title='{}']".format("Shivam K1"))))
+user=wait.until(EC.presence_of_element_located((By.XPATH,"//span[@title='{}']".format("//enter contact name here"))))
 user.click()
 
 
